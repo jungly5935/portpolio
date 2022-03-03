@@ -86,11 +86,13 @@ p{
 
 /* Navbar */
 #navbar{
-    background-color: var(--color-pink);
+    background-color: transparent;
     display: flex;
     justify-content: space-between ;
     align-items: center;
-    padding:16px;
+    padding:8px;
+    position: fixed;
+    width: 100%;
 }
 
 .navbar__menu{
@@ -121,6 +123,7 @@ p{
 #home {
     background: url("imgs/homebackground.png") center/cover no-repeat;
     padding: 40px;
+    padding-top: 120px;
     text-align: center;
 }
 .home__avatar{
