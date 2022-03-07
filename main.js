@@ -16,10 +16,18 @@ window.addEventListener('scroll', () =>{
     }
 })
 
-// Navbar 메뉴클릭하면 스크롤링. eventlistener1개로 고치기
-const navbarMenu = document.querySelector(".navbar__menu");
 
+// Navbar 메뉴클릭하면 스크롤링
+//ㄱㅗㅇ토ㅇ함수
+function scrollIntoView(selector){
+    document.querySelector(selector).scrollIntoView({behavior:'smooth'});
+}
+const navbarMenu = document.querySelector(".navbar__menu");
 navbarMenu.addEventListener('click', (e)=>{
-    console.log(e.target.dataset.link);
-    document.querySelector(e.target.dataset.link).scrollIntoView({behavior: 'smooth'});
+    scrollIntoView(e.target.dataset.link);
+})
+
+const contactMe = document.querySelector('.home__contact');
+contactMe.addEventListener('click', ()=>{
+    scrollIntoView('#contact');
 })
