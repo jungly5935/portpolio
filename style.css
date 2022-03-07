@@ -122,6 +122,8 @@ p{
 /* Home */
 #home {
     background: url("imgs/homebackground.png") center/cover no-repeat;
+}
+.home_container{
     padding: 40px;
     padding-top: 120px;
     text-align: center;
