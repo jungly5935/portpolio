@@ -39,6 +39,22 @@ window.addEventListener('scroll', ()=>{
         // home_container.style.transition = "all var(--animation-duration) ease-in";
 })
 
+//home밑으로 스크롤내리면 up버튼 나타나게 하기
+const upBtn = document.querySelector(".upBtn i");
+window.addEventListener('scroll', () =>{
+    if(window.scrollY >= home_container.scrollHeight){
+        upBtn.classList.add("visible");
+    }
+    else {
+        upBtn.classList.remove("visible");
+    }
+    upBtn.addEventListener('click', ()=>{
+        scrollIntoView("#home");
+    })
+
+})
+
+
 
 
 //공통함수

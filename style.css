@@ -414,6 +414,21 @@ p{
     top:24px;
     display: none;
 }
+.upBtn i {
+    position: fixed;
+    right:36px;
+    bottom:36px;
+    font-size: 62px;
+    color: var(--color-dark-pink);
+    z-index: 1;
+    pointer-events: none;   
+    opacity:0;
+    transition: all var(--animation-duration) ease-in;
+}
+.upBtn i.visible{
+    opacity:1;
+    pointer-events: auto;
+}
 @media screen and (max-width: 768px) {
     .navbar__toggle-btn{
         display: block;
@@ -445,3 +460,4 @@ p{
         height: 80px;
     }
 }
+
