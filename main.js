@@ -16,3 +16,10 @@ window.addEventListener('scroll', () =>{
     }
 })
 
+// Navbar 메뉴클릭하면 스크롤링. eventlistener1개로 고치기
+const navbarMenu = document.querySelector(".navbar__menu");
+
+navbarMenu.addEventListener('click', (e)=>{
+    console.log(e.target.dataset.link);
+    document.querySelector(e.target.dataset.link).scrollIntoView({behavior: 'smooth'});
+})

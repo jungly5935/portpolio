@@ -90,9 +90,9 @@ p{
     display: flex;
     justify-content: space-between ;
     align-items: center;
-    padding:8px;
     position: fixed;
     width: 100%;
+    z-index: 1;
 }
 
 .navbar__menu{
@@ -149,7 +149,7 @@ p{
 
 /* Section common */
 .section {
-    padding: 50px;
+    padding: 60px;
     text-align: center;
     margin: auto;
 }
