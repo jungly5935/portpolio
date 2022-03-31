@@ -47,7 +47,7 @@
         <div class="home_container">
             <img src="imgs/profile.png" alt="suky's profile photo" class="home__avatar">
             <h1 class="home__title">Hello, <br> I'm Suky</h1>
-            <h2 class="home__description">Developers who succeed one day at a time</h2>
+            <h2 class="home__description">I try to achieve one small goal a day</h2>
             <button class="home__contact">Contact Me</button>  
         </div>
     </section>
@@ -56,7 +56,7 @@
     <section id="about" class="section section__container" >
         <h1>About me</h1>
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum laudantium facilis quis ullam ratione neque praesentium temporibus nemo officia magni dignissimos, accusamus voluptatem quaerat iste quisquam autem mollitia provident dolorem!
+            It's a development language that I can use with the knowledge I've accumulated.
         </p>
         <div class="about__majors">
             <div class="major">
@@ -83,10 +83,10 @@
         </div>
         <div class="about__jobs">
             <div class="job">
-                <i class="fas fa-school"></i>                  
+                <!-- <i class="fas fa-school"></i>                   -->
             <div class="job__description">
-                <p class="job__name">Lorem ipsum</p>
-                <p class="job__period">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <!-- <p class="job__name">Lorem ipsum</p> -->
+                <!-- <p class="job__period">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> -->
             </div>
         </div>
         </div>
@@ -97,7 +97,7 @@
             <div class="section__container">
                 <h1>skills</h1>
                 <h2>skills & Attributes</h2> 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur molestiae cumque minima repellat architecto sunt tempora quos tenetur laboriosam iste nemo sequi, hic esse deserunt!</p>           
+                <p>These are the development techniques and degrees that I can use</p>           
             </div>
             <div class="skillset">
                 <div class="skillset__left"> 
@@ -129,6 +129,24 @@
                             <div class="skill__value" style="width: 80%;"></div>
                         </div>
                     </div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>Typescript</span>
+                            <span>30%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 30%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>React</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 50%;"></div>
+                        </div>
+                    </div>
                 </div>
                 <div class="skillset__right">
                     <div class="tools">
@@ -154,36 +172,36 @@
             <h1>My work</h1>
             <h3>Projects</h3>
             <div class="work__categories">
-                <button class="category__btn active">
+                <button class="category__btn active" data-work="all">
                     All <span class="category__count">3</span>
                 </button>
-                <button class="category__btn">
+                <button class="category__btn" data-work="front">
                     Front-end <span class="category__count">2</span>
                 </button>
-                <button class="category__btn">
+                <button class="category__btn" data-work="back">
                     Back-end <span class="category__count">1</span>
                 </button>
             </div>
             <div class="work__projects">
                 <a href="" class="project">
+                    <img src="imgs/projects/illegalParking.jpeg" alt="" class="project__img">
+                    <div class="project__description">
+                        <h3>Illegal Parking Project</h3>
+                        <span>React, Redux, javascript</span>
+                    </div>
+                </a>
+                <a href="" class="project">
                     <img src="imgs/projects/youtube.png" alt="" class="project__img">
                     <div class="project__description">
                         <h3>Youtube Site</h3>
-                        <span>Clone coding with HTML, CSS</span>
+                        <span>Clone coding with React, javascript</span>
                     </div>
                 </a>
                 <a href="" class="project">
-                    <img src="imgs/projects/kakaomap.png" alt="" class="project__img">
+                    <img src="imgs/projects/쩝쩝박사.png" alt="" class="project__img">
                     <div class="project__description">
-                        <h3>Youtube Site</h3>
-                        <span>Clone coding with HTML, CSS</span>
-                    </div>
-                </a>
-                <a href="" class="project">
-                    <img src="imgs/projects/blog.png" alt="" class="project__img">
-                    <div class="project__description">
-                        <h3>Youtube Site</h3>
-                        <span>Clone coding with HTML, CSS</span>
+                        <h3>쩝쩝박사</h3>
+                        <span>Kakaomap Api, Typescript, React</span>
                     </div>
                 </a>
             </div>
@@ -199,17 +217,17 @@
                 <div class="testimonial">
                     <img src="" alt="people" class="testimonial__avatar">
                     <div class="testimonial__speech-bubble">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio accusantium quasi nisi repellat, fuga, iure tempore nemo laborum aspernatur nostrum vitae reiciendis dignissimos. Fugiat accusantium voluptates molestias facilis, tempora voluptatum?</p>
+                        <p>It's a space where I'll work hard to fill in </p>
                         <p class="name"><a href="">Suky</a></p>
                     </div>
                 </div>
-                <div class="testimonial">
+                <!-- <div class="testimonial">
                     <div class="testimonial__speech-bubble">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio accusantium quasi nisi repellat, fuga, iure tempore nemo laborum aspernatur nostrum vitae reiciendis dignissimos. Fugiat accusantium voluptates molestias facilis, tempora voluptatum?</p>
+                        <p>It's a space where I'll work hard to fill in  </p>
                         <p class="name"><a href="">Suky</a></p>
                     </div>
                     <img src="" alt="people" class="testimonial__avatar">
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -217,6 +235,7 @@
     <section id="contact" class="section">
         <h1 class="contact__title">Let's talk</h1>
         <h2 class="contact__email">1724271@donga.ac.kr</h2>
+        <h2 class="contact__email">jungly5935@naver.com</h2>
         <div class="contact__links">
             <a href="https://github.com/jungly5935">
                 <i class="fab fa-github"></i>
